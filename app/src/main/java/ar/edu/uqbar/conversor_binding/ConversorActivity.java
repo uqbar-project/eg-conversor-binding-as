@@ -13,7 +13,7 @@ public class ConversorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conversor);
         ActivityConversorBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_conversor);
-        Conversor conversor = new Conversor();
+        ConversorModel conversor = new ConversorModel();
         binding.setConversor(conversor);
     }
 

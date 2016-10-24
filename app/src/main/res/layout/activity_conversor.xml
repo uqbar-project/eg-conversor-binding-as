@@ -4,7 +4,7 @@
     <data>
         <variable
             name="conversor"
-            type="ar.edu.uqbar.conversor_binding.Conversor" />
+            type="ar.edu.uqbar.conversor_binding.ConversorModel" />
     </data>
 
     <LinearLayout
