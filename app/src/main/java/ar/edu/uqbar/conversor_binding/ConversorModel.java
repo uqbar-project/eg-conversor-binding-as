@@ -11,8 +11,6 @@ import java.math.BigDecimal;
  */
 
 public class ConversorModel extends BaseObservable {
-    final double FACTOR_CONVERSION = 1.609344;
-
     private Conversor conversor = new Conversor();
 
     public void convertir() {
