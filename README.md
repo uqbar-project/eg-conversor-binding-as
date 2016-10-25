@@ -26,7 +26,7 @@ Este proyecto está generado en Java para
  * propiedades kilómetros y millas que son numéricas
  * la responsabilidad de convertir de millas a kilómetros
  
- ## Configuraciones necesarias para tener binding
+## Configuraciones necesarias para tener binding
  
 Tenés que usar gradle 1.5.0 ó superior (en el ejemplo usamos gradle 2.2.0).
 
