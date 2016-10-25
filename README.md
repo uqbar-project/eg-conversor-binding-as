@@ -24,7 +24,9 @@ Este proyecto está generado en Java para
  * el mensaje convertir que delega al conversor la actualización de los kilómetros y notifica ese cambio a la vista
 * El **domain model** es un objeto Conversor, con
  * propiedades kilómetros y millas que son numéricas
- * la responsabilidad convertir
+ * la responsabilidad de convertir de millas a kilómetros
+ 
+ 
  
 
 
