@@ -112,7 +112,7 @@ public class ConversorModel extends BaseObservable {
 
 Las propiedades millas y kilómetros son bindeables, esto significa que disparan notificaciones a la vista (activity.xml):
 
-```
+```java
     @Bindable
     public String getMillas() {
         return "" + conversor.getMillas();
