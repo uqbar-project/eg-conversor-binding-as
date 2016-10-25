@@ -14,7 +14,7 @@ Este proyecto está generado en Java para
 
 ## Arquitectura MVC
 
-![grafico](/image/Android_Conversor_Binding.png)
+![grafico](/images/Android_Conversor_Binding.png)
 
 * La **vista** se define como un xml
 * El **controller** lo define el ConversorActivity
