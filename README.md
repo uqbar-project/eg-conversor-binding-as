@@ -14,7 +14,7 @@ Este proyecto está generado en Java para
 
 ## Arquitectura MVC
 
-![grafico](https://drive.google.com/open?id=0B9t2msYh_ogZU3oyS3pWUkdYMnc)
+![grafico](https://drive.google.com/file/d/0B9t2msYh_ogZU3oyS3pWUkdYMnc/view?usp=sharing)
 
 * La **vista** se define como un xml
 * El **controller** lo define el ConversorActivity
