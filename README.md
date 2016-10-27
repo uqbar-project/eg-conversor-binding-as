@@ -62,7 +62,7 @@ En la [vista](app/src/main/res/layout/activity_conversor.xml) tienen que usar un
     <data>
 ```
  
-... y luego se puede utilizar el mecanismo de Data Binding. En el caso del TextView que muestra los kilómetros, el binding es one-way, se demarca de la siguiente manera:
+... y luego se puede utilizar el mecanismo de Data Binding. En el caso del TextView que muestra los kilómetros, el binding es one-way (del modelo hacia la vista), se demarca de la siguiente manera:
 
 ```xml
         <TextView
@@ -70,7 +70,7 @@ En la [vista](app/src/main/res/layout/activity_conversor.xml) tienen que usar un
             android:text="@{conversor.kilometros}" />
 ```
 
-...en el caso del EditText que permite ingresar las millas, queremos que se two-way el binding, para que la vista actualice el modelo y viceversa. Entonces debemos agregar el símbolo = entre el @ y el {:
+...en el caso del EditText que permite ingresar las millas, queremos que el binding sea two-way, para que la vista actualice el modelo y viceversa. Entonces debemos agregar el símbolo = entre el @ y el {:
  
 ```xml
         <EditText
@@ -93,6 +93,8 @@ El binding de eventos se da construyendo un closure que define el comportamiento
 El [controller](app/src/main/java/ar/edu/uqbar/conversor_binding/ConversorActivity.java) define una Activity y genera el binding contra el view model correspondiente:
 
 ```java
+public class ConversorActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ...
@@ -100,7 +102,11 @@ El [controller](app/src/main/java/ar/edu/uqbar/conversor_binding/ConversorActivi
         ConversorModel conversor = new ConversorModel();
         binding.setConversor(conversor);
     }
+
+}
 ```
+
+Nótese que no necesitamos implementar onClickListener en la Activity, ya que las notificaciones las manejará el ViewModel, que explicaremos a continuación.
 
 ### ViewModel
 
