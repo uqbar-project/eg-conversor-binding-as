@@ -1,12 +1,12 @@
 package ar.edu.uqbar.conversor_binding;
 
+import android.app.Activity;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import ar.edu.uqbar.conversor_binding.databinding.ActivityConversorBinding;
 
-public class ConversorActivity extends AppCompatActivity {
+public class ConversorActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
